@@ -117,6 +117,13 @@
 </div>
 
 <script>
+    const video = document.getElementById('background-video');
+    const websiteContent = document.getElementById('website-content');
+
+    video.addEventListener('ended', function () {
+      video.style.display = 'none';
+      websiteContent.style.display = 'block';
+    });
 
      // Handle Attending button click
          $("#attendingBtn").click(function () {
