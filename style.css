@@ -21,6 +21,17 @@ font-family: 'Tangerine', cursive;
 font-family: 'Ysabeau Infant', sans-serif;
 */
 
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
 .video-container {
     position: relative;
     width: 100%;
@@ -29,7 +40,7 @@ font-family: 'Ysabeau Infant', sans-serif;
 }
 
 video {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -152,7 +163,7 @@ font-family: 'Kaushan Script', cursive;
 }
 
 .countdownTimer{
-    font-family: 'Libre Baskerville';
+    font-family: Libre Baskerville;
     color: cadetblue;
     font-size: 30px;
 }
